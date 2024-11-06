@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container ">
+            <a class="navbar-brand fw-bold" href="#hero">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" >
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Hero Section with Full-Width Background Image -->
+<section id="hero" class="hero d-flex align-items-center" 
+        style="background-image: url('background.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        height: 100vh;">
+    
+    <div class="container text-white">
+        <div class="">
+            <img src="profile.jpg" class="port"></img>
+        </div>
+        
+        <h1 class="fs-3"><br>Hello, I'm <span class="text-primary">ABNER OLIVAREZ</span></h1>
+        <p class="fs-6">
+            I'm a passionate Web Developer who creates modern, responsive websites and applications that are 
+            visually compelling and user-focused. 
+        </p>
+        <p>Let's build a powerful online presence together!</p>
+        <a href="#projects" class="btn btn-outline-primary">View My Work</a>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm <strong class="fs-5">Abner</strong>, a dedicated web developer with expertise in crafting modern, high-performance web solutions 
+                        using the latest technologies. Specializing in front-end development, I’m passionate about designing 
+                        engaging and intuitive user experiences that make a lasting impact.</p>
+                    
+                    <p>With a strong eye for design and a commitment to detail, I focus on delivering high-quality work 
+                        that’s tailored to meet your unique goals. I look forward to collaborating with you to 
+                        bring your vision to life!</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="aboutme.jpg" class="img-fluid rounded" alt="About Me Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="html.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">A project I built in HTML excluded CSS and other frameworks.</p>
+                            <a href="https://abnerolivarez.github.io/html_foundation/index.html"target="_blank" class="btn btn-secondary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="htmlcss.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML & CSS</h5>
+                            <p class="card-text">A project included HTML and CSS with a JavaScript application.</p>
+                            <a href="https://abnerolivarez.github.io/porfolio/" target="_blank" class="btn btn-secondary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="bootstrap.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">With Bootstrap</h5>
+                            <p class="card-text">A combination of HTML, CSS and Bootstrap frameworks</p>
+                            <a href="https://abnerolivarez.github.io/Bootstrap1/index.html"target="_blank" class="btn btn-secondary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>HTML</h4>
+                    <div class="progress mb-3" aria-label="Animated striped example" style="height: 20px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 95%;" 
+                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+
+                    <h4>CSS</h4>
+                    <div class="progress mb-3" aria-label="Animated striped example" style="height: 20px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" 
+                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+
+                    <h4>JavaScript</h4>
+                    <div class="progress mb-3" aria-label="Animated striped example" style="height: 20px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 80%;" 
+                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Bootstrap</h4>
+                    <div class="progress mb-3" aria-label="Animated striped example" style="height: 20px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 85%;" 
+                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+
+                    <h4>PHP</h4>
+                    <div class="progress mb-3" aria-label="Animated striped example" style="height: 20px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-black" role="progressbar" style="width: 80%;" 
+                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+
+                    <h4>MySQL</h4>
+                    <div class="progress mb-3" aria-label="Animated striped example" style="height: 20px;" >
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar " style="width: 80%;" 
+                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container bg-light col-md-6 rounded">
+            <h2 class="text-center mb-5"><br>Contact Me</h2>
+            <div class="row">
+                <div class="col-md-7 mx-auto">
+                    <form>
+                        <div class="mb-2">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-2">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-dark">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and About -->
+                <div class="col-md-4 mb-4">
+                    <h5>About Me</h5>
+                    <p class="small">
+                        Hello! I'm <strong class="fs-4">Abner</strong>, a dedicated web developer with expertise in crafting modern, high-performance web solutions 
+                        using the latest technologies. Specializing in front-end development, I’m passionate about designing 
+                        engaging and intuitive user experiences that make a lasting impact.
+                    </p>
+                </div>
+    
+                <!-- Navigation Links -->
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#hero" class="text-white  text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none">About Me</a></li>
+                        <li><a href="#projects" class="text-white text-decoration-none">Project</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info and Social Media Links -->
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Me</h5>
+                    <p class="small mb-1">Email: abner.olivarez@gmail.com</p>
+                    <p class="small mb-1">Phone: +63 998-585-0395</p>
+                    <p class="small mb-1">Landline: 049-559-6652</p>
+                    <div class="mt-3">
+                        <!-- Social media icons (FontAwesome required) -->
+                        <a href="https://www.facebook.com/"target="_blank" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/@abnerolivarez" target="_blank"class="text-white me-3"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="bg-light">
+            <div class="text-center small">
+                <p class="mb-0">&copy; 2024 Abner Olivarez. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+        <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
